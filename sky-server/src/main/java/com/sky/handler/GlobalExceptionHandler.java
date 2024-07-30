@@ -28,7 +28,7 @@ public class GlobalExceptionHandler {
         return Result.error(ex.getMessage());
     }
 
-    //@ExceptionHandler
+    @ExceptionHandler
     public Result sqlExceptionHandler(SQLException ex) {
         String errorMessage = ex.getMessage();
         if (errorMessage.contains("Duplicate entry")) {
