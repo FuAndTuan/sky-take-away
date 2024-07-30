@@ -60,7 +60,7 @@ public class CategoryController {
 
     @ApiOperation("新增分类")
     @PostMapping
-    public Result add(CategoryDTO categoryDTO) {
+    public Result add(@RequestBody CategoryDTO categoryDTO) {
         log.info("新增分类，参数:{}", categoryDTO);
         categoryService.add(categoryDTO);
         return Result.success();
