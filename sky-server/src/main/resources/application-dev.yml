@@ -11,3 +11,7 @@ sky:
     access-key-id: LTAI5tPwTGaH5uRkN7qdR1ez
     access-key-secret: vRJNtXJvl2QNzwkDgfHCqDtbKS0y0b
     bucket-name: sky-take-out-tlias-2024
+  redis:
+    host: localhost
+    port: 6379
+    database: 0
