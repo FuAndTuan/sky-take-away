@@ -24,4 +24,11 @@
         </where>
         order by sort, create_time desc
     </select>
+    <select id="getByType" resultType="com.sky.entity.Category">
+        select * from category
+        <where>
+            <if test="type != null">type = #{type}</if>
+        </where>
+        order by sort, create_time desc
+    </select>
 </mapper>
